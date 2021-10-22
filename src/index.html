@@ -11,8 +11,17 @@
   </head>
   <body>
     <div class="main">
-      <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button">Boom?</button>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" class="input" name="name" required minlength="20" placeholder="name">
+          <label for="name-slug">Name-slug:</label>
+          <input type="text" id="name-slug" class="input" name="name-slug" required placeholder="name-slug" pattern="([a-zA-Z]+(-[a-zA-Z]+)+)">
+          <label for="contributors">Contributors:</label>
+          <input type="number" id="contributors" class="input" name="tentacles" min="1" max="100" placeholder="contributors">
+          <label for="branches">Max branches:</label>
+          <input type="number" id="branches" class="input" name="tentacles" min="1" max="100" placeholder="max branches">
+          <input type="submit" value="Submit">
+        </form>
     </div>
   </body>
 </html>
